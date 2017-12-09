@@ -11,10 +11,10 @@ In this term i have learnt:
 
 - Logic gates
 - boolean expressions
--
--
--
--
+- SR flip flops
+- Multiplexers
+- Counters
+- Operational amplifiers
 
 ```markdown
 Syntax highlighted code block
