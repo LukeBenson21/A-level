@@ -9,8 +9,8 @@ exspecially electronics
 
 In this term i have learnt:
 
--Logic gates
--boolean expressions
+- Logic gates
+- boolean expressions
 -
 -
 -
