@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+function startTime() {
+    var today = new Date();
+    var h = today.getHours();
+    var m = today.getMinutes();
+    var s = today.getSeconds();
+    m = checkTime(m);
+    s = checkTime(s);
+    document.getElementById('txt').innerHTML =
+    h + ":" + m + ":" + s;
+    var t = setTimeout(startTime, 500);
+}
+function checkTime(i) {
+    if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
+    return i;
+}
+</script>
+<style>
+.title {font-family:Arial;
+	font-weight = bold;
+	border-style:solid;
+	color:red;
+	background-color:blue;
+	}
+ </style>
+</head>
+<body onload="startTime()">
+
+<div id="txt"></div>
+<h1>Maths</h1>
+<img src="https://i0.wp.com/www.preston.ac.uk/wp-content/uploads/2016/03/maths.jpg?resize=870%2C415&ssl=1"width="104"height="142">
+
+<p>Maths i would say is one of the easier subjects of the day, this is because its not
+as hard to understand compared to other subjects.</p>
+
+<h2>Topics</h2>
+<p>some of the topics i have learnt this year are:
+
+- Bionomial expansion 
+- Logarithms 
+- Co-ordinated geomertry
+- Differentiation
+- Intergration
+- Circle theomrems 
+</p>
+</body>
+</html>
