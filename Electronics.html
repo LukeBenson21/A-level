@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+function startTime() {
+    var today = new Date();
+    var h = today.getHours();
+    var m = today.getMinutes();
+    var s = today.getSeconds();
+    m = checkTime(m);
+    s = checkTime(s);
+    document.getElementById('txt').innerHTML =
+    h + ":" + m + ":" + s;
+    var t = setTimeout(startTime, 500);
+}
+function checkTime(i) {
+    if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
+    return i;
+}
+</script>
+</head>
+<body onload="startTime()">
+
+<div id="txt"></div>
+<h1> Elecrtonics</h1>
+<img src="http://unitech99.co.kr/wp-content/uploads/2017/02/Electronic-Materials.jpg"width="104"height="142">
+
+<p>In my first term of college i have learnt alot of differnt topics 
+exspecially electronics</p>
+
+<h2>topics</h2>
+<p>In this term i have learnt:
+
+- Logic gates
+- boolean expressions
+- SR flip flops
+- Multiplexers
+- Counters
+- Operational amplifiers
+</p>
+</body>
+</html>
