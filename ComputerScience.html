@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+function startTime() {
+    var today = new Date();
+    var h = today.getHours();
+    var m = today.getMinutes();
+    var s = today.getSeconds();
+    m = checkTime(m);
+    s = checkTime(s);
+    document.getElementById('txt').innerHTML =
+    h + ":" + m + ":" + s;
+    var t = setTimeout(startTime, 500);
+}
+function checkTime(i) {
+    if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
+    return i;
+}
+</script>
+<style>
+	body{background-color:MintCream;}
+ </style>
+</head>
+<body onload="startTime()">
+
+<div id="txt"></div>
+<center>	
+<h1 style="background-color:RoyalBlue;">Computer Science</h1>
+<img src="http://anangpuria.com/demo/blog/wp-content/uploads/2017/02/computer-science.jpg"width="300"height"150">
+<p style="background-color:SkyBlue;">Computer Science is probably the most interesting for me<br> this is because our world is filled with technology.</p>
+</center>
+<h2 style="background-color:RoyalBlue;">Topics</h2>
+<p style="background-color:Skyblue;">some of the topics i have learnt this year are:"<br>
+<br>
+- Hardware and Communications<br>
+- File Organistation<br>
+- Arrays<br>
+- Loops<br>
+- Java<br>
+</p>
+<a href="index.html">-Home</a><br>	
+</body>
+</html>
