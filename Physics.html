@@ -1,1 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+function startTime() {
+    var today = new Date();
+    var h = today.getHours();
+    var m = today.getMinutes();
+    var s = today.getSeconds();
+    m = checkTime(m);
+    s = checkTime(s);
+    document.getElementById('txt').innerHTML =
+    h + ":" + m + ":" + s;
+    var t = setTimeout(startTime, 500);
+}
+function checkTime(i) {
+    if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
+    return i;
+}
+</script>
+<style>
+	body{background-color:MintCream;}
+ </style>
+</head>
+<body onload="startTime()">
+
+<div id="txt"></div>
+<center>	
+<h1 style="background-color:RoyalBlue;">Physics</h1>
+<img src="https://images.theconversation.com/files/191827/original/file-20171025-25516-g7rtyl.jpg?ixlib=rb-1.1.0&rect=0%2C70%2C7875%2C5667&q=45&auto=format&w=926&fit=clip"width="300"height"200">
+<p style="background-color:SkyBlue;">I think Physics is a crutial subject if you want to go into any type of engineering.</p>
+</center>
+<h2 style="background-color:RoyalBlue;">Topics</h2>
+<p style="background-color:Skyblue;">some of the topics i have learnt this year are:"<br>
+<br>
+- Moments<br>
+- Electricity<br>
+- Motion<br>
+- Waves<br>
+- Forces<br>
+</p>
+<a href="index.html">-Home</a><br>	
+</body>
+</html>
 
